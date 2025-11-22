@@ -1,0 +1,1 @@
+function dpmmo:digging/tick

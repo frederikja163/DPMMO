@@ -1,0 +1,79 @@
+scoreboard objectives add dpmmo_digging_cooldown dummy
+scoreboard objectives add dpmmo_digging_level dummy
+scoreboard objectives add dpmmo_digging_xp dummy
+scoreboard objectives add dpmmo_digging_req dummy
+
+schedule function dpmmo:digging/second 1s
+
+scoreboard objectives add dpmmo_clay minecraft.mined:minecraft.clay
+scoreboard objectives add dpmmo_coarse_dirt minecraft.mined:minecraft.coarse_dirt
+scoreboard objectives add dpmmo_white_concrete_powder minecraft.mined:minecraft.white_concrete_powder
+scoreboard objectives add dpmmo_light_gray_concrete_powder minecraft.mined:minecraft.light_gray_concrete_powder
+scoreboard objectives add dpmmo_gray_concrete_powder minecraft.mined:minecraft.gray_concrete_powder
+scoreboard objectives add dpmmo_black_concrete_powder minecraft.mined:minecraft.black_concrete_powder
+scoreboard objectives add dpmmo_brown_concrete_powder minecraft.mined:minecraft.brown_concrete_powder
+scoreboard objectives add dpmmo_red_concrete_powder minecraft.mined:minecraft.red_concrete_powder
+scoreboard objectives add dpmmo_orange_concrete_powder minecraft.mined:minecraft.orange_concrete_powder
+scoreboard objectives add dpmmo_yellow_concrete_powder minecraft.mined:minecraft.yellow_concrete_powder
+scoreboard objectives add dpmmo_lime_concrete_powder minecraft.mined:minecraft.lime_concrete_powder
+scoreboard objectives add dpmmo_green_concrete_powder minecraft.mined:minecraft.green_concrete_powder
+scoreboard objectives add dpmmo_cyan_concrete_powder minecraft.mined:minecraft.cyan_concrete_powder
+scoreboard objectives add dpmmo_light_blue_concrete_powder minecraft.mined:minecraft.light_blue_concrete_powder
+scoreboard objectives add dpmmo_blue_concrete_powder minecraft.mined:minecraft.blue_concrete_powder
+scoreboard objectives add dpmmo_purple_concrete_powder minecraft.mined:minecraft.purple_concrete_powder
+scoreboard objectives add dpmmo_magenta_concrete_powder minecraft.mined:minecraft.magenta_concrete_powder
+scoreboard objectives add dpmmo_pink_concrete_powder minecraft.mined:minecraft.pink_concrete_powder
+scoreboard objectives add dpmmo_dirt minecraft.mined:minecraft.dirt
+scoreboard objectives add dpmmo_dirt_path minecraft.mined:minecraft.dirt_path
+scoreboard objectives add dpmmo_farmland minecraft.mined:minecraft.farmland
+scoreboard objectives add dpmmo_grass_block minecraft.mined:minecraft.grass_block
+scoreboard objectives add dpmmo_gravel minecraft.mined:minecraft.gravel
+scoreboard objectives add dpmmo_mud minecraft.mined:minecraft.mud
+scoreboard objectives add dpmmo_muddy_mangrove_roots minecraft.mined:minecraft.muddy_mangrove_roots
+scoreboard objectives add dpmmo_mycelium minecraft.mined:minecraft.mycelium
+scoreboard objectives add dpmmo_podzol minecraft.mined:minecraft.podzol
+scoreboard objectives add dpmmo_red_sand minecraft.mined:minecraft.red_sand
+scoreboard objectives add dpmmo_rooted_dirt minecraft.mined:minecraft.rooted_dirt
+scoreboard objectives add dpmmo_sand minecraft.mined:minecraft.sand
+scoreboard objectives add dpmmo_snow minecraft.mined:minecraft.snow
+scoreboard objectives add dpmmo_snow_block minecraft.mined:minecraft.snow_block
+scoreboard objectives add dpmmo_soul_sand minecraft.mined:minecraft.soul_sand
+scoreboard objectives add dpmmo_soul_soil minecraft.mined:minecraft.soul_soil
+scoreboard objectives add dpmmo_suspicious_gravel minecraft.mined:minecraft.suspicious_gravel
+scoreboard objectives add dpmmo_suspicious_sand minecraft.mined:minecraft.suspicious_sand
+
+scoreboard players set dpmmo_clay dpmmo_xp_config 2
+scoreboard players set dpmmo_coarse_dirt dpmmo_xp_config 1
+scoreboard players set dpmmo_white_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_light_gray_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_gray_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_black_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_brown_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_red_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_orange_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_yellow_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_lime_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_green_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_cyan_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_light_blue_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_blue_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_purple_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_magenta_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_pink_concrete_powder dpmmo_xp_config 2
+scoreboard players set dpmmo_dirt dpmmo_xp_config 1
+scoreboard players set dpmmo_farmland dpmmo_xp_config 1
+scoreboard players set dpmmo_grass_block dpmmo_xp_config 1
+scoreboard players set dpmmo_gravel dpmmo_xp_config 1
+scoreboard players set dpmmo_mud dpmmo_xp_config 2
+scoreboard players set dpmmo_muddy_mangrove_roots dpmmo_xp_config 2
+scoreboard players set dpmmo_mycelium dpmmo_xp_config 2
+scoreboard players set dpmmo_podzol dpmmo_xp_config 1
+scoreboard players set dpmmo_red_sand dpmmo_xp_config 1
+scoreboard players set dpmmo_rooted_dirt dpmmo_xp_config 1
+scoreboard players set dpmmo_sand dpmmo_xp_config 1
+scoreboard players set dpmmo_snow dpmmo_xp_config 1
+scoreboard players set dpmmo_snow_block dpmmo_xp_config 1
+scoreboard players set dpmmo_soul_sand dpmmo_xp_config 4
+scoreboard players set dpmmo_soul_soil dpmmo_xp_config 4
+scoreboard players set dpmmo_suspicious_gravel dpmmo_xp_config 1
+scoreboard players set dpmmo_suspicious_sand dpmmo_xp_config 1
