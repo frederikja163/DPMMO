@@ -5,75 +5,43 @@ scoreboard objectives add dpmmo_digging_req dummy
 
 schedule function dpmmo:digging/second 1s
 
-scoreboard objectives add dpmmo_clay minecraft.mined:minecraft.clay
-scoreboard objectives add dpmmo_coarse_dirt minecraft.mined:minecraft.coarse_dirt
-scoreboard objectives add dpmmo_white_concrete_powder minecraft.mined:minecraft.white_concrete_powder
-scoreboard objectives add dpmmo_light_gray_concrete_powder minecraft.mined:minecraft.light_gray_concrete_powder
-scoreboard objectives add dpmmo_gray_concrete_powder minecraft.mined:minecraft.gray_concrete_powder
-scoreboard objectives add dpmmo_black_concrete_powder minecraft.mined:minecraft.black_concrete_powder
-scoreboard objectives add dpmmo_brown_concrete_powder minecraft.mined:minecraft.brown_concrete_powder
-scoreboard objectives add dpmmo_red_concrete_powder minecraft.mined:minecraft.red_concrete_powder
-scoreboard objectives add dpmmo_orange_concrete_powder minecraft.mined:minecraft.orange_concrete_powder
-scoreboard objectives add dpmmo_yellow_concrete_powder minecraft.mined:minecraft.yellow_concrete_powder
-scoreboard objectives add dpmmo_lime_concrete_powder minecraft.mined:minecraft.lime_concrete_powder
-scoreboard objectives add dpmmo_green_concrete_powder minecraft.mined:minecraft.green_concrete_powder
-scoreboard objectives add dpmmo_cyan_concrete_powder minecraft.mined:minecraft.cyan_concrete_powder
-scoreboard objectives add dpmmo_light_blue_concrete_powder minecraft.mined:minecraft.light_blue_concrete_powder
-scoreboard objectives add dpmmo_blue_concrete_powder minecraft.mined:minecraft.blue_concrete_powder
-scoreboard objectives add dpmmo_purple_concrete_powder minecraft.mined:minecraft.purple_concrete_powder
-scoreboard objectives add dpmmo_magenta_concrete_powder minecraft.mined:minecraft.magenta_concrete_powder
-scoreboard objectives add dpmmo_pink_concrete_powder minecraft.mined:minecraft.pink_concrete_powder
-scoreboard objectives add dpmmo_dirt minecraft.mined:minecraft.dirt
-scoreboard objectives add dpmmo_dirt_path minecraft.mined:minecraft.dirt_path
-scoreboard objectives add dpmmo_farmland minecraft.mined:minecraft.farmland
-scoreboard objectives add dpmmo_grass_block minecraft.mined:minecraft.grass_block
-scoreboard objectives add dpmmo_gravel minecraft.mined:minecraft.gravel
-scoreboard objectives add dpmmo_mud minecraft.mined:minecraft.mud
-scoreboard objectives add dpmmo_muddy_mangrove_roots minecraft.mined:minecraft.muddy_mangrove_roots
-scoreboard objectives add dpmmo_mycelium minecraft.mined:minecraft.mycelium
-scoreboard objectives add dpmmo_podzol minecraft.mined:minecraft.podzol
-scoreboard objectives add dpmmo_red_sand minecraft.mined:minecraft.red_sand
-scoreboard objectives add dpmmo_rooted_dirt minecraft.mined:minecraft.rooted_dirt
-scoreboard objectives add dpmmo_sand minecraft.mined:minecraft.sand
-scoreboard objectives add dpmmo_snow minecraft.mined:minecraft.snow
-scoreboard objectives add dpmmo_snow_block minecraft.mined:minecraft.snow_block
-scoreboard objectives add dpmmo_soul_sand minecraft.mined:minecraft.soul_sand
-scoreboard objectives add dpmmo_soul_soil minecraft.mined:minecraft.soul_soil
-scoreboard objectives add dpmmo_suspicious_gravel minecraft.mined:minecraft.suspicious_gravel
-scoreboard objectives add dpmmo_suspicious_sand minecraft.mined:minecraft.suspicious_sand
+# 1xp
+function dpmmo:define_action {name: "dpmmo_coarse_dirt", scoreboard: "minecraft.mined:minecraft.coarse_dirt", xp: 1}
+function dpmmo:define_action {name: "dpmmo_dirt", scoreboard: "minecraft.mined:minecraft.dirt", xp: 1}
+function dpmmo:define_action {name: "dpmmo_farmland", scoreboard: "minecraft.mined:minecraft.farmland", xp: 1}
+function dpmmo:define_action {name: "dpmmo_grass_block", scoreboard: "minecraft.mined:minecraft.grass_block", xp: 1}
+function dpmmo:define_action {name: "dpmmo_gravel", scoreboard: "minecraft.mined:minecraft.gravel", xp: 1}
+function dpmmo:define_action {name: "dpmmo_podzol", scoreboard: "minecraft.mined:minecraft.podzol", xp: 1}
+function dpmmo:define_action {name: "dpmmo_red_sand", scoreboard: "minecraft.mined:minecraft.red_sand", xp: 1}
+function dpmmo:define_action {name: "dpmmo_rooted_dirt", scoreboard: "minecraft.mined:minecraft.rooted_dirt", xp: 1}
+function dpmmo:define_action {name: "dpmmo_sand", scoreboard: "minecraft.mined:minecraft.sand", xp: 1}
+function dpmmo:define_action {name: "dpmmo_snow", scoreboard: "minecraft.mined:minecraft.snow", xp: 1}
+function dpmmo:define_action {name: "dpmmo_snow_block", scoreboard: "minecraft.mined:minecraft.snow_block", xp: 1}
+function dpmmo:define_action {name: "dpmmo_suspicious_gravel", scoreboard: "minecraft.mined:minecraft.suspicious_gravel", xp: 1}
+function dpmmo:define_action {name: "dpmmo_suspicious_sand", scoreboard: "minecraft.mined:minecraft.suspicious_sand", xp: 1}
 
-scoreboard players set dpmmo_clay dpmmo_xp_config 2
-scoreboard players set dpmmo_coarse_dirt dpmmo_xp_config 1
-scoreboard players set dpmmo_white_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_light_gray_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_gray_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_black_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_brown_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_red_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_orange_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_yellow_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_lime_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_green_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_cyan_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_light_blue_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_blue_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_purple_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_magenta_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_pink_concrete_powder dpmmo_xp_config 2
-scoreboard players set dpmmo_dirt dpmmo_xp_config 1
-scoreboard players set dpmmo_farmland dpmmo_xp_config 1
-scoreboard players set dpmmo_grass_block dpmmo_xp_config 1
-scoreboard players set dpmmo_gravel dpmmo_xp_config 1
-scoreboard players set dpmmo_mud dpmmo_xp_config 2
-scoreboard players set dpmmo_muddy_mangrove_roots dpmmo_xp_config 2
-scoreboard players set dpmmo_mycelium dpmmo_xp_config 2
-scoreboard players set dpmmo_podzol dpmmo_xp_config 1
-scoreboard players set dpmmo_red_sand dpmmo_xp_config 1
-scoreboard players set dpmmo_rooted_dirt dpmmo_xp_config 1
-scoreboard players set dpmmo_sand dpmmo_xp_config 1
-scoreboard players set dpmmo_snow dpmmo_xp_config 1
-scoreboard players set dpmmo_snow_block dpmmo_xp_config 1
-scoreboard players set dpmmo_soul_sand dpmmo_xp_config 2
-scoreboard players set dpmmo_soul_soil dpmmo_xp_config 2
-scoreboard players set dpmmo_suspicious_gravel dpmmo_xp_config 1
-scoreboard players set dpmmo_suspicious_sand dpmmo_xp_config 1
+# 2xp
+function dpmmo:define_action {name: "dpmmo_clay", scoreboard: "minecraft.mined:minecraft.clay", xp: 2}
+function dpmmo:define_action {name: "dpmmo_white_concrete_powder", scoreboard: "minecraft.mined:minecraft.white_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_light_gray_concrete_powder", scoreboard: "minecraft.mined:minecraft.light_gray_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_gray_concrete_powder", scoreboard: "minecraft.mined:minecraft.gray_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_black_concrete_powder", scoreboard: "minecraft.mined:minecraft.black_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_brown_concrete_powder", scoreboard: "minecraft.mined:minecraft.brown_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_red_concrete_powder", scoreboard: "minecraft.mined:minecraft.red_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_orange_concrete_powder", scoreboard: "minecraft.mined:minecraft.orange_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_yellow_concrete_powder", scoreboard: "minecraft.mined:minecraft.yellow_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_lime_concrete_powder", scoreboard: "minecraft.mined:minecraft.lime_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_green_concrete_powder", scoreboard: "minecraft.mined:minecraft.green_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_cyan_concrete_powder", scoreboard: "minecraft.mined:minecraft.cyan_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_light_blue_concrete_powder", scoreboard: "minecraft.mined:minecraft.light_blue_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_blue_concrete_powder", scoreboard: "minecraft.mined:minecraft.blue_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_purple_concrete_powder", scoreboard: "minecraft.mined:minecraft.purple_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_magenta_concrete_powder", scoreboard: "minecraft.mined:minecraft.magenta_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_pink_concrete_powder", scoreboard: "minecraft.mined:minecraft.pink_concrete_powder", xp: 2}
+function dpmmo:define_action {name: "dpmmo_mud", scoreboard: "minecraft.mined:minecraft.mud", xp: 2}
+function dpmmo:define_action {name: "dpmmo_muddy_mangrove_roots", scoreboard: "minecraft.mined:minecraft.muddy_mangrove_roots", xp: 2}
+function dpmmo:define_action {name: "dpmmo_mycelium", scoreboard: "minecraft.mined:minecraft.mycelium", xp: 2}
+
+# 3xp
+function dpmmo:define_action {name: "dpmmo_soul_sand", scoreboard: "minecraft.mined:minecraft.soul_sand", xp: 3}
+function dpmmo:define_action {name: "dpmmo_soul_soil", scoreboard: "minecraft.mined:minecraft.soul_soil", xp: 3}
