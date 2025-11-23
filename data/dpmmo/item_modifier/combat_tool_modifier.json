@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "consumable": { "consume_seconds": 100000000}
+  },
+  "conditions": [
+    {
+      "condition": "minecraft:reference",
+      "name": "dpmmo:wearing_combat_tool"
+    }
+  ]
+}

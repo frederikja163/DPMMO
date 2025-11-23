@@ -43,4 +43,4 @@ function dpmmo:give_xp {name: "dpmmo_soul_soil", skill: "dpmmo_digging"}
 
 execute as @a run function dpmmo:level_up {"skill": "dpmmo_digging", display: "Digging"}
 
-execute as @a if predicate dpmmo:wearing_digging_tool run function dpmmo:actionbar {"skill": "dpmmo_digging", "display": "Digging"}
+execute as @a if predicate dpmmo:wearing_digging_tool run function dpmmo:actionbar {"skill": "dpmmo_digging", "display": "Digging", effect: "Haste"}

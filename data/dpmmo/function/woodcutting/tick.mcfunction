@@ -60,4 +60,4 @@ function dpmmo:give_xp {name: "dpmmo_stripped_warped_hyphae", skill: "dpmmo_wood
 
 execute as @a run function dpmmo:level_up {"skill": "dpmmo_woodcutting", display: "woodcutting"}
 
-execute as @a if predicate dpmmo:wearing_woodcutting_tool run function dpmmo:actionbar {"skill": "dpmmo_woodcutting", "display": "woodcutting"}
+execute as @a if predicate dpmmo:wearing_woodcutting_tool run function dpmmo:actionbar {"skill": "dpmmo_woodcutting", "display": "Woodcutting", effect: "Haste"}

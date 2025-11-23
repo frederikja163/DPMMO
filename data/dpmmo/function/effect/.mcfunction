@@ -4,7 +4,7 @@ $execute if score @s $(skill)_level matches ..10 run return fail
 # Still on cooldown
 $execute if score @s $(skill)_cooldown matches 1.. run return fail
 
-# Already using haste.
+# Already using effect.
 $execute if score @s $(skill)_cooldown matches ..-1 run return fail
 
 # Calculate amplifier
@@ -18,7 +18,7 @@ $execute store result storage dpmmo haste.time int 1 run scoreboard players get 
 
 $data modify storage dpmmo haste.effect set value $(effect)
 
-$tellraw @s [{text: "Haste activated for the next ", color: "green"}, {score: {name:"@s", objective: "$(skill)_cooldown"}}, " seconds."]
+$tellraw @s [{text: "Activated $(effect) for the next ", color: "green"}, {score: {name:"@s", objective: "$(skill)_cooldown"}}, " seconds."]
 
 function dpmmo:effect/give_effect with storage dpmmo haste
 
