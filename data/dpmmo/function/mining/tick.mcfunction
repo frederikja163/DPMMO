@@ -3,6 +3,7 @@ execute as @a run item modify entity @s weapon.mainhand dpmmo:mining_tool_modifi
 # 1xp
 function dpmmo:give_xp {name: "dpmmo_stone", skill: "dpmmo_mining" }
 function dpmmo:give_xp {name: "dpmmo_cobblestone", skill: "dpmmo_mining" }
+function dpmmo:give_xp {name: "dpmmo_mossy_cobblestone", skill: "dpmmo_mining"}
 function dpmmo:give_xp {name: "dpmmo_andesite", skill: "dpmmo_mining" }
 function dpmmo:give_xp {name: "dpmmo_diorite", skill: "dpmmo_mining" }
 function dpmmo:give_xp {name: "dpmmo_granite", skill: "dpmmo_mining" }

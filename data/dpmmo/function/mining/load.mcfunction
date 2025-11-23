@@ -8,6 +8,7 @@ schedule function dpmmo:mining/second 1s
 # 1xp
 function dpmmo:define_action {name: "dpmmo_stone", scoreboard: "minecraft.mined:minecraft.stone", xp: 1}
 function dpmmo:define_action {name: "dpmmo_cobblestone", scoreboard: "minecraft.mined:minecraft.cobblestone", xp: 1}
+function dpmmo:define_action {name: "dpmmo_mossy_cobblestone", scoreboard: "minecraft.mined:minecraft.mossy_cobblestone", xp: 1}
 function dpmmo:define_action {name: "dpmmo_andesite", scoreboard: "minecraft.mined:minecraft.andesite", xp: 1}
 function dpmmo:define_action {name: "dpmmo_diorite", scoreboard: "minecraft.mined:minecraft.diorite", xp: 1}
 function dpmmo:define_action {name: "dpmmo_granite", scoreboard: "minecraft.mined:minecraft.granite", xp: 1}
