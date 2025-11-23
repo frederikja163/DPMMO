@@ -16,6 +16,6 @@ function dpmmo:give_xp {name: "dpmmo_cactus", skill: "dpmmo_farming"}
 function dpmmo:give_xp {name: "dpmmo_mangrove_roots", skill: "dpmmo_farming"}
 function dpmmo:give_xp {name: "dpmmo_chorus_plant", skill: "dpmmo_farming"}
 
-execute as @a run function dpmmo:level_up {"skill": "dpmmo_farming", display: "farming"}
+execute as @a run function dpmmo:level_up {"skill": "dpmmo_farming", display: "Farming"}
 
-execute as @a if predicate dpmmo:wearing_farming_tool run function dpmmo:actionbar {"skill": "dpmmo_farming", "display": "farming", effect: "Speed"}
+execute as @a if predicate dpmmo:wearing_farming_tool run function dpmmo:actionbar {"skill": "dpmmo_farming", "display": "Farming", effect: "Speed"}

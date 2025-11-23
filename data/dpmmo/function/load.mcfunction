@@ -1,4 +1,5 @@
-scoreboard objectives add dpmmo_tmp dummy
+scoreboard objectives add dpmmo trigger
+scoreboard objectives add dpmmo_tmp trigger
 scoreboard objectives add dpmmo_globals dummy
 scoreboard objectives add dpmmo_xp_config dummy
 

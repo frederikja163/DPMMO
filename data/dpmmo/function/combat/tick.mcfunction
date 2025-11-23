@@ -8,6 +8,7 @@ function dpmmo:give_xp {name: "dpmmo_cave_spider", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_silverfish", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_endermite", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_wolf", skill: "dpmmo_combat"}
+function dpmmo:give_xp {name: "dpmmo_fox", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_cat", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_chicken", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_cow", skill: "dpmmo_combat"}
@@ -16,6 +17,10 @@ function dpmmo:give_xp {name: "dpmmo_sheep", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_rabbit", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_turtle", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_squid", skill: "dpmmo_combat"}
+function dpmmo:give_xp {name: "dpmmo_cod", skill: "dpmmo_combat"}
+function dpmmo:give_xp {name: "dpmmo_salmon", skill: "dpmmo_combat"}
+function dpmmo:give_xp {name: "dpmmo_tropical_fish", skill: "dpmmo_combat"}
+function dpmmo:give_xp {name: "dpmmo_pufferfish", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_llama", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_trader_llama", skill: "dpmmo_combat"}
 function dpmmo:give_xp {name: "dpmmo_villager", skill: "dpmmo_combat"}

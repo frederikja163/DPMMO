@@ -13,6 +13,7 @@ function dpmmo:define_action {name: "dpmmo_cave_spider", scoreboard: "minecraft.
 function dpmmo:define_action {name: "dpmmo_silverfish", scoreboard: "minecraft.killed:minecraft.silverfish", xp: 1}
 function dpmmo:define_action {name: "dpmmo_endermite", scoreboard: "minecraft.killed:minecraft.endermite", xp: 1}
 function dpmmo:define_action {name: "dpmmo_wolf", scoreboard: "minecraft.killed:minecraft.wolf", xp: 1}
+function dpmmo:define_action {name: "dpmmo_fox", scoreboard: "minecraft.killed:minecraft.fox", xp: 1}
 function dpmmo:define_action {name: "dpmmo_cat", scoreboard: "minecraft.killed:minecraft.cat", xp: 1}
 function dpmmo:define_action {name: "dpmmo_chicken", scoreboard: "minecraft.killed:minecraft.chicken", xp: 1}
 function dpmmo:define_action {name: "dpmmo_cow", scoreboard: "minecraft.killed:minecraft.cow", xp: 1}
@@ -21,6 +22,10 @@ function dpmmo:define_action {name: "dpmmo_sheep", scoreboard: "minecraft.killed
 function dpmmo:define_action {name: "dpmmo_rabbit", scoreboard: "minecraft.killed:minecraft.rabbit", xp: 1}
 function dpmmo:define_action {name: "dpmmo_turtle", scoreboard: "minecraft.killed:minecraft.turtle", xp: 1}
 function dpmmo:define_action {name: "dpmmo_squid", scoreboard: "minecraft.killed:minecraft.squid", xp: 1}
+function dpmmo:define_action {name: "dpmmo_cod", scoreboard: "minecraft.killed:minecraft.cod", xp: 1}
+function dpmmo:define_action {name: "dpmmo_salmon", scoreboard: "minecraft.killed:minecraft.salmon", xp: 1}
+function dpmmo:define_action {name: "dpmmo_tropical_fish", scoreboard: "minecraft.killed:minecraft.tropical_fish", xp: 1}
+function dpmmo:define_action {name: "dpmmo_pufferfish", scoreboard: "minecraft.killed:minecraft.pufferfish", xp: 1}
 function dpmmo:define_action {name: "dpmmo_llama", scoreboard: "minecraft.killed:minecraft.llama", xp: 1}
 function dpmmo:define_action {name: "dpmmo_trader_llama", scoreboard: "minecraft.killed:minecraft.trader_llama", xp: 1}
 function dpmmo:define_action {name: "dpmmo_villager", scoreboard: "minecraft.killed:minecraft.villager", xp: 1}
