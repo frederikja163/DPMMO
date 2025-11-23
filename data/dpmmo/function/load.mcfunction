@@ -14,4 +14,5 @@ scoreboard players set 158 dpmmo_globals 158
 
 scoreboard objectives add dpmmo_total_level dummy
 
+function dpmmo:mining/load
 function dpmmo:digging/load

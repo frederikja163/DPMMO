@@ -1,4 +1,4 @@
-execute as @a run item modify entity @s weapon.mainhand dpmmo:consumable
+execute as @a run item modify entity @s weapon.mainhand dpmmo:digging_tool_modifier
 
 function dpmmo:give_xp {"block": "dpmmo_clay", "skill": "dpmmo_digging"}
 function dpmmo:give_xp {"block": "dpmmo_coarse_dirt", "skill": "dpmmo_digging"}
@@ -36,6 +36,6 @@ function dpmmo:give_xp {"block": "dpmmo_soul_soil", "skill": "dpmmo_digging"}
 function dpmmo:give_xp {"block": "dpmmo_suspicious_gravel", "skill": "dpmmo_digging"}
 function dpmmo:give_xp {"block": "dpmmo_suspicious_sand", "skill": "dpmmo_digging"}
 
-execute as @a run function dpmmo:level_up {"skill": "dpmmo_digging"}
+execute as @a run function dpmmo:level_up {"skill": "dpmmo_digging", display: "Digging"}
 
 execute as @a if predicate dpmmo:wearing_digging_tool run function dpmmo:actionbar {"skill": "dpmmo_digging", "display": "Digging"}
