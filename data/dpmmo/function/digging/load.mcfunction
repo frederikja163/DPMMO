@@ -73,7 +73,7 @@ scoreboard players set dpmmo_rooted_dirt dpmmo_xp_config 1
 scoreboard players set dpmmo_sand dpmmo_xp_config 1
 scoreboard players set dpmmo_snow dpmmo_xp_config 1
 scoreboard players set dpmmo_snow_block dpmmo_xp_config 1
-scoreboard players set dpmmo_soul_sand dpmmo_xp_config 4
-scoreboard players set dpmmo_soul_soil dpmmo_xp_config 4
+scoreboard players set dpmmo_soul_sand dpmmo_xp_config 2
+scoreboard players set dpmmo_soul_soil dpmmo_xp_config 2
 scoreboard players set dpmmo_suspicious_gravel dpmmo_xp_config 1
 scoreboard players set dpmmo_suspicious_sand dpmmo_xp_config 1
