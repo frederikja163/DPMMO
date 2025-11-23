@@ -16,5 +16,6 @@ scoreboard objectives add dpmmo_total_level dummy
 
 function dpmmo:combat/load
 function dpmmo:digging/load
+function dpmmo:farming/load
 function dpmmo:mining/load
 function dpmmo:woodcutting/load
