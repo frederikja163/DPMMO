@@ -1,3 +1,6 @@
+# Insufficient level
+$execute if score @s $(skill)_level matches ..10 run return fail
+
 # Still on cooldown
 $execute if score @s $(skill)_cooldown matches 1.. run return fail
 
