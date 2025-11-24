@@ -8,7 +8,6 @@ execute if block ~ ~ ~ #minecraft:oak_logs run summon item ~ ~ ~ {Item: {count:1
 execute if block ~ ~ ~ #minecraft:pale_oak_logs run summon item ~ ~ ~ {Item: {count:1, id:"minecraft:stripped_pale_oak_log"}}
 execute if block ~ ~ ~ #minecraft:spruce_logs run summon item ~ ~ ~ {Item: {count:1, id:"minecraft:stripped_spruce_log"}}
 
-say hi
 setblock ~ ~ ~ air
 function dpmmo:utility/remove_durability
 $scoreboard players add @s $(skill)_xp 1
