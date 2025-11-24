@@ -1,6 +1,5 @@
 execute as @a run item modify entity @s weapon.mainhand dpmmo:woodcutting_tool_modifier
 
-
 # 1xp
 function dpmmo:utility/give_xp {name: "dpmmo_oak_log", skill: "dpmmo_woodcutting"}
 function dpmmo:utility/give_xp {name: "dpmmo_spruce_log", skill: "dpmmo_woodcutting" }
