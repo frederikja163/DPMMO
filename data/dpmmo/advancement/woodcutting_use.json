@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "dpmmo:woodcutting/use"
+    "function": "dpmmo:skill/woodcutting/use"
   }
 }

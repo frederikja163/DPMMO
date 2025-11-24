@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "dpmmo:mining/use"
+    "function": "dpmmo:skill/mining/use"
   }
 }

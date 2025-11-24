@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "dpmmo:combat/use"
+    "function": "dpmmo:skill/combat/use"
   }
 }
