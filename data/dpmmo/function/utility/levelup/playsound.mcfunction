@@ -1,7 +1,3 @@
-$scoreboard players operation @s dpmmo_tmp = @s $(skill)_level
-scoreboard players operation @s dpmmo_tmp %= 100 dpmmo_globals
-execute if score @s dpmmo_tmp matches 0..0 run playsound minecraft:entity.firework_rocket.twinkle_far
-execute if score @s dpmmo_tmp matches 0..0 run return fail
-scoreboard players operation @s dpmmo_tmp %= 10 dpmmo_globals
-execute if score @s dpmmo_tmp matches 0..0 run playsound minecraft:entity.player.levelup
-execute unless score @s dpmmo_tmp matches 0..0 run playsound minecraft:entity.experience_orb.pickup
+execute if score @s dpmmo_lvl_up_type matches 2..2 run playsound minecraft:entity.firework_rocket.twinkle_far
+execute if score @s dpmmo_lvl_up_type matches 1..1 run playsound minecraft:entity.player.levelup
+execute if score @s dpmmo_lvl_up_type matches 0..0 run playsound minecraft:entity.experience_orb.pickup

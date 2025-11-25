@@ -1,7 +1,9 @@
 scoreboard objectives add dpmmo trigger
-scoreboard objectives add dpmmo_tmp trigger
+scoreboard objectives add dpmmo_tmp dummy
 scoreboard objectives add dpmmo_globals dummy
 scoreboard objectives add dpmmo_xp_config dummy
+# 0 = normal, 1 = minor, 2 = mayor
+scoreboard objectives add dpmmo_lvl_up_type dummy
 
 scoreboard players set -1 dpmmo_globals -1
 scoreboard players set 1 dpmmo_globals 1
