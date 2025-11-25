@@ -1,1 +1,1 @@
-$tellraw @s [{"text":"$(display) lvl ", "color": "yellow"}, {score: {name:"@s", objective: "$(skill)_level"}}, " [", {score:{name:"@s", objective:"$(skill)_xp"}}, "/", {score:{name:"@s", objective:"$(skill)_req"}}, "]"]
+$tellraw @s [{text: "$(display)", color: "gold"}, {text: " Lv", color: "aqua"}, {score: {name:"$(name)", objective:"$(skill)_level"}, color: "aqua"}, {text:" (", color:"white"}, {score: {name:"$(name)", objective: "$(skill)_percentage"}, color: "yellow"}, {text: "%", color: "yellow"}, {text:")", color:"white"}]
