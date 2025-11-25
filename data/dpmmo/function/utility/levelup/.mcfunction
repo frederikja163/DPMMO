@@ -6,7 +6,6 @@ $scoreboard players operation @s $(skill)_xp -= @s $(skill)_req
 $scoreboard players add @s $(skill)_level 1
 scoreboard players add @s dpmmo_total_level 1
 
-
 $tellraw @s [{text: "$(display) leveled up to level ", color: "green"}, {score:{name:"@s", objective: "$(skill)_level"}}, ", new total level is ", {score:{name:"@s", objective:"dpmmo_total_level"}}]
 $execute as @s at @s run function dpmmo:utility/levelup/playsound {skill: $(skill)}
 $function $(success) {skill: $(skill)}
