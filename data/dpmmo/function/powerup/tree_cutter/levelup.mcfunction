@@ -1,3 +1,5 @@
+$scoreboard players operation @s $(skill)_cooldown = @s $(skill)_cooldown
+
 $scoreboard players operation @s $(skill)_charges_max = @s $(skill)_level
 $scoreboard players operation @s $(skill)_charges_max /= 100 dpmmo_globals
 $scoreboard players add @s $(skill)_charges_max 1

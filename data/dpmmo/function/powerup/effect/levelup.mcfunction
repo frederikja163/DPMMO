@@ -1,3 +1,5 @@
+$scoreboard players operation @s $(skill)_cooldown = @s $(skill)_cooldown
+
 $scoreboard players operation @s $(skill)_amplifier = @s $(skill)_level
 $scoreboard players operation @s $(skill)_amplifier /= 100 dpmmo_globals
 
