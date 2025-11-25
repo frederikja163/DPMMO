@@ -1,5 +1,3 @@
-scoreboard players set @s dpmmo_activity 5
-
 # Still on cooldown
 $execute if score @s $(skill)_cooldown matches 1.. run return fail
 
@@ -7,13 +5,15 @@ $execute if score @s $(skill)_cooldown matches 1.. run return fail
 $execute if score @s $(skill)_cooldown matches ..-1 run return fail
 
 # Calculate amplifier
-$execute store result storage dpmmo haste.amplifier int 1 run scoreboard players get @s $(skill)_amplifier
+$execute store result storage dpmmo:powerup effect.amplifier int 1 run scoreboard players get @s $(skill)_amplifier
 # Calculate time
-$execute store result storage dpmmo haste.time int 1 run scoreboard players get @s $(skill)_time_max
+$execute store result storage dpmmo:powerup effect.time int 1 run scoreboard players get @s $(skill)_time_max
 
-$data modify storage dpmmo haste.effect set value $(effect)
+$data modify storage dpmmo:powerup effect.effect set from storage dpmmo $(skill).effect
 
-function dpmmo:powerup/effect/give_effect with storage dpmmo haste
+function dpmmo:powerup/effect/give_effect with storage dpmmo:powerup effect
+
+data remove storage dpmmo:powerup effect
 
 # Convert to ticks.
 $scoreboard players operation @s $(skill)_time = @s $(skill)_time_max

@@ -7,7 +7,7 @@ $scoreboard players add @s $(skill)_level 1
 scoreboard players add @s dpmmo_total_level 1
 
 $execute as @s at @s run function dpmmo:utility/levelup/playsound {skill: $(skill)}
-$function $(success) {skill: $(skill), display: $(display)}
+$function $(success) {skill: $(skill)}
 
 # Calculate new requirement.
 $scoreboard players operation @s $(skill)_req = @s $(skill)_level
