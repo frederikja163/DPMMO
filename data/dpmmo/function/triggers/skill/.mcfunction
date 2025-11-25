@@ -2,6 +2,6 @@ $tellraw @s [{text: "=== [$(display)] ===", color: yellow}]
 $tellraw @s [{text: "Level: ", color: gold},{score: {name:"@s", objective:"$(skill)_level"}, color: "aqua"}, {text:" (", color:"white"}, {score: {name:"@s", objective: "$(skill)_percentage"}, color: "yellow"}, {text: "%", color: "yellow"}, {text:")", color:"white"}]
 $tellraw @s [{text: "Xp: ", color: gold},{score: {name:"@s", objective:"$(skill)_xp"}, color: "aqua"},{text: "/", color: aqua},{score: {name:"@s", objective:"$(skill)_req"}, color: "aqua"}]
 tellraw @s [{text: "--------------", color: yellow}]
-$function $(effect) {skill: "$(skill)", name: "$(name)", effectName: "$(effectName)"}
+$function $(effect) {skill: "$(skill)", name: "$(name)"}
 $tellraw @s [{text: "=== [$(display)] ===", color: yellow}]
 $scoreboard players set @s $(skill) 0
