@@ -1,1 +1,1 @@
-function dpmmo:powerup/effect/second {skill:"dpmmo_farming"}
+function dpmmo:powerup/harvester/second {skill:"dpmmo_farming"}

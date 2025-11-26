@@ -10,7 +10,7 @@ execute if block ~ ~ ~ #minecraft:spruce_logs run summon item ~ ~ ~ {Item: {coun
 
 setblock ~ ~ ~ air
 function dpmmo:utility/remove_durability
-$scoreboard players add @s $(skill)_xp 1
+scoreboard players add @s dpmmo_oak_log 1
 
 $execute positioned ~1 ~1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
 $execute positioned ~1 ~1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
