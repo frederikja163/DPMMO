@@ -1,1 +1,0 @@
-function dpmmo:powerup/harvester/second {skill:"dpmmo_farming"}

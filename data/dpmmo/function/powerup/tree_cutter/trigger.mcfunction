@@ -1,3 +1,5 @@
+tellraw @s [{text: "--------------", color: yellow}]
+
 tellraw @s [{text: "Tree cutter", color: "gold"}]
 $tellraw @s [{text: "Recharge time: ", color: "gold"}, {score:{name:"$(name)", objective:"$(skill)_cooldown_max"}, color: aqua}]
 $tellraw @s [{text: "Charges: ", color: "gold"}, {score:{name:"$(name)", objective:"$(skill)_charges"}, color: aqua}]

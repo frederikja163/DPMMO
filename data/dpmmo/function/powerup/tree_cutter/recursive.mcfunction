@@ -12,32 +12,32 @@ setblock ~ ~ ~ air
 function dpmmo:utility/remove_durability
 scoreboard players add @s dpmmo_oak_log 1
 
-$execute positioned ~1 ~1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~ ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~ ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~ ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~-1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~ ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~ ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~ ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~-1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
 
-$execute positioned ~ ~1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~ ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-# $execute positioned ~ ~ ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~ ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~-1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~-1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~ ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+# $execute positioned ~ ~ ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~ ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~-1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~-1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
 
-$execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~ ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~ ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
-$execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #minecraft:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~ ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~ ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
+$execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #dpmmo:logs run function dpmmo:powerup/tree_cutter/recursive {skill: "$(skill)"}
