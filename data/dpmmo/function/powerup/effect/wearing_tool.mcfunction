@@ -1,5 +1,5 @@
-$execute if score @s $(skill)_cooldown matches 0..0 run item modify entity @e weapon.mainhand dpmmo:make_consumable
-$execute unless score @s $(skill)_cooldown matches 0..0 run item modify entity @e weapon.mainhand dpmmo:remove_consumable
+$execute if score @s $(skill)_cooldown matches 0..0 run item modify entity @s weapon.mainhand dpmmo:make_consumable
+$execute unless score @s $(skill)_cooldown matches 0..0 run item modify entity @s weapon.mainhand dpmmo:remove_consumable
 
 $execute if score @s $(skill)_cooldown matches 0..0 run title @s actionbar [                                        {storage: "dpmmo:skill", nbt: "$(skill).display", color: gold}, {text: " Lv", color: "aqua"}, {score: {name:"@s", objective:"$(skill)_level"}, color: "aqua"}, {text:" (", color:"white"}, {score: {name:"@s", objective: "$(skill)_percentage"}, color: "yellow"}, {text: "%", color: "yellow"}, {text:")", color:"white"}, {text: " • ", color: "dark_gray"}, {text: "Ready", color: "green"}]
 $execute if score @s $(skill)_cooldown matches 1.. if score @s $(skill)_time matches 0..0 run title @s actionbar [  {storage: "dpmmo:skill", nbt: "$(skill).display", color: gold}, {text: " Lv", color: "aqua"}, {score: {name:"@s", objective:"$(skill)_level"}, color: "aqua"}, {text:" (", color:"white"}, {score: {name:"@s", objective: "$(skill)_percentage"}, color: "yellow"}, {text: "%", color: "yellow"}, {text:")", color:"white"}, {text: " • ", color: "dark_gray"}, {text: "⏳", color: "red"}, {score:{name:"@s", objective:"$(skill)_cooldown"}, color: "red"}, {text: "s", color: "red"}]
