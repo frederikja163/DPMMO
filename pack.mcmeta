@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": {
-      "translate": "dataPack.vanilla.description"
+      "translate": "Datapack mmo. Inspired by MCMMO but in datapack form"
     },
     "min_format": [88, 0],
     "max_format": [88, 0]
