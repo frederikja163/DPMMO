@@ -13,7 +13,9 @@ $data modify storage dpmmo:powerup effect.effect set from storage dpmmo:skill $(
 
 function dpmmo:powerup/effect/give_effect with storage dpmmo:powerup effect
 
-#data remove storage dpmmo:powerup effect
+$tellraw @s [{storage: "dpmmo:skill", nbt:"$(skill).display", color:gold}, {text: " • ", color: "dark_gray"}, {storage: "dpmmo:skill", nbt:"$(skill).Effect", color:gold}, " ", {score:{name:"@s",objective:"$(skill)_Amplifier"}, color: gold}, {text:" Started!", color: green}, {text: " • ", color: "dark_gray"}, {storage:"dpmmo:powerup", nbt:"effect.time",color:"aqua"},{text:"s", color:aqua}]
+
+data remove storage dpmmo:powerup effect
 
 # Convert to ticks.
 $scoreboard players operation @s $(skill)_time = @s $(skill)_time_max

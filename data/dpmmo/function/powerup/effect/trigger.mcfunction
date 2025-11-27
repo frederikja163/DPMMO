@@ -1,8 +1,6 @@
 tellraw @s [{text: "--------------", color: yellow}]
 
-$scoreboard players operation @s dpmmo_tmp = @s $(skill)_amplifier
-scoreboard players add @s dpmmo_tmp 1
-$tellraw @s [{storage: "dpmmo:skill", nbt: "$(skill).Effect", color: gold}, " " , {score:{name:"$(name)", objective:"dpmmo_tmp"}}]
+$tellraw @s [{storage: "dpmmo:skill", nbt: "$(skill).Effect", color: gold}, " " , {score:{name:"$(name)", objective:"$(skill)_Amplifier"}}]
 $tellraw @s [{text: "Duration: ", color: "gold"}, {score:{name:"$(name)", objective:"$(skill)_time_max"}, color: aqua}, {text: "s", color: aqua}]
 tellraw @s [{text: "Cooldown: ", color: "gold"}, {text: "300s", color: aqua}]
 
